@@ -24,7 +24,7 @@ const Admin = () => {
 
   React.useEffect(() => {
     if (user == null) router.push("/auth/signin");
-  }, [user]);
+  }, [user,router]);
 
   return (
     <Flex
