@@ -34,6 +34,7 @@ const Home = () => {
         console.log(error);
         return;
       }
+        //@ts-ignore
       setItems(result);
       setLoading(false);
       console.log(result);
