@@ -35,7 +35,7 @@ const Home = () => {
         return;
       }
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
+    // @ts-ignore
       setItems(result);
       setLoading(false);
       console.log(result);

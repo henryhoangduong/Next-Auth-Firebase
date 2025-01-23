@@ -25,8 +25,9 @@ export const AddUserBox = () => {
     } catch (err) {
       console.error("Unexpected error:", err);
       toast.error("An unexpected error occurred.");
-    } finally {
-      setLoading(false);
+	} finally {
+		window.location.reload();
+		setLoading(false);
     }
   };
 
