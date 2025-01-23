@@ -29,7 +29,7 @@ const SignIn = () => {
     toast.success("Successful sign in");
     console.log(result);
     setLoading(false);
-    return router.push("/admin");
+    return router.push("/home");
   };
   return (
     <Flex direction="column" align="center" justify="center" className="mt-10">
