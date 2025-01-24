@@ -14,6 +14,7 @@ const SignUp = () => {
   const [password, setPassword] = React.useState<string>("");
   const router = useRouter();
   const handleForm = async (event: React.FormEvent<HTMLFormElement>) => {
+    setLoading(true);
     event.preventDefault();
 
     const { result, error } = await signUp({ email, password });
